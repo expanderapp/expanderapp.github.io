@@ -66,6 +66,9 @@ nav span {
   /* border: 3px solid #f7f7f7; */
   /* box-shadow: 0 0 9px #333; */
 }
+.card.open-card {
+  cursor: default;
+}
 
 .cards .card h2 {
   margin: 0;
@@ -78,6 +81,7 @@ nav span {
   overflow: auto;
   height: 100%;
   color: #fff;
+  cursor: default;
 }
 .card-content > * {
   transform: translateY(-35px);
@@ -92,6 +96,7 @@ nav span {
   width: 100%;
   background-color: #fff;
   margin-bottom: 10px;
+  cursor: pointer;
   animation: slideDown 0.5s ease-out 0.2s forwards;
 }
 .card-content p {

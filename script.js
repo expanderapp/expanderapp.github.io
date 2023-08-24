@@ -74,6 +74,7 @@ const createCloseButton = () => {
     background: transparent;
     color: white;
     font-size: 2rem;
+    cursor: pointer;
   `;
   return closeButton;
 };
@@ -98,9 +99,10 @@ const resetCardStyles = (cardClone) => {
   });
 };
 
-const onCardClick = async (e) => {
-  const card = e.currentTarget;
-  const cardIndex = [...cards].indexOf(card); // Get the index of the clicked card
+let isOpen = false;
+
+const onCardClick = async (card) => {
+  const cardIndex = [...cards].indexOf(card);
   const { top, left, width, height } = card.getBoundingClientRect();
   const cardClone = cloneAndPositionCard(card, top, left, width, height);
 
@@ -117,6 +119,7 @@ const onCardClick = async (e) => {
     await toggleExpansion(cardClone, { top: `${top}px`, left: `${left}px`, width: `${width}px`, height: `${height}px` }, 300);
     card.style.removeProperty("opacity");
     cardClone.remove();
+    isOpen = false;
   };
 
   const handleEscKeyPress = (event) => {
@@ -139,15 +142,28 @@ const onCardClick = async (e) => {
 
   await toggleExpansion(cardClone, { top: 0, left: 0, width: "100vw", height: "100vh" });
 
-  const title = card.textContent;
-  const img = card.dataset.img; // Use dataset.img to access the image data
-
-  // Use the card index to fetch data from the JSON file
   const content = await getCardContent(cardIndex);
   cardClone.style.display = "block";
   cardClone.style.padding = "0";
   cardClone.appendChild(closeButton);
   cardClone.insertAdjacentHTML("afterbegin", content);
+
+  const cardContent = cardClone.querySelector(".card-content");
+  const image = cardContent.querySelector("img");
+  if (image) {
+    image.addEventListener("click", () => {
+      closeCard();
+    });
+  }
 };
 
-cards.forEach((card) => card.addEventListener("click", onCardClick));
+cards.forEach((card) => card.addEventListener("click", () => {
+  if (!isOpen) {
+    onCardClick(card);
+    isOpen = true;
+
+    // Add a class to indicate that the card is open
+    card.classList.add("open-card");
+  }
+}));
+
