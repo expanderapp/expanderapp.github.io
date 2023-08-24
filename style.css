@@ -1,14 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
 html{
   overflow: hidden;
 }
 body {
   background:  white;
   color: #111;
-}
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
 }
 @keyframes slideDown {
   100% {
@@ -23,8 +24,8 @@ body {
   height: 100vh;
 }
 header {
-  padding-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 10px;
+  margin-bottom: 20px;
 }
 header h1 {
   font-size: 42px;
@@ -101,5 +102,9 @@ nav span {
 }
 .card-content p {
   color: #999;
+  font-size: 1.4rem;
   animation: slideDown 0.5s ease-out 0.4s forwards;
+}
+.card-content p:last-child{
+  margin-bottom: 80px;
 }
