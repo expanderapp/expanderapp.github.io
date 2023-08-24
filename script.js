@@ -30,26 +30,32 @@ const fadeContent = (element, opacity, duration = 300) => {
 }
 
 
-const getCardContent = async () => {
+const getCardContent = async (cardIndex) => {
   try {
-    const response = await fetch('content.json'); 
+    const response = await fetch('content.json');
     const data = await response.json();
 
-    const paragraphs = data.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join('');
+    if (data && data.cards && data.cards[cardIndex]) {
+      const cardData = data.cards[cardIndex];
 
-    return `
-      <div class="card-content">
-        <h2>${data.title}</h2>
-        <img src="${data.img}" alt="${data.title}">
-        <!-- <img src="images/${data.img}.png" alt="${data.title}"> -->
-        ${paragraphs}
-      </div>
-    `;
+      const paragraphs = cardData.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join('');
+
+      return `
+        <div class="card-content">
+          <h2>${cardData.title}</h2>
+          <img src="${cardData.img}" alt="${cardData.title}">
+          ${paragraphs}
+        </div>
+      `;
+    } else {
+      throw new Error('Card data not found');
+    }
   } catch (error) {
     console.error('Error fetching content:', error);
     return ''; // Return an empty string or a default content in case of an error
   }
 };
+
 
 
 
@@ -94,6 +100,7 @@ const resetCardStyles = (cardClone) => {
 
 const onCardClick = async (e) => {
   const card = e.currentTarget;
+  const cardIndex = [...cards].indexOf(card); // Get the index of the clicked card
   const { top, left, width, height } = card.getBoundingClientRect();
   const cardClone = cloneAndPositionCard(card, top, left, width, height);
 
@@ -101,7 +108,7 @@ const onCardClick = async (e) => {
   card.parentNode.appendChild(cardClone);
 
   const closeButton = createCloseButton();
-  
+
   const closeCard = async () => {
     document.removeEventListener("keydown", handleEscKeyPress);
     closeButton.remove();
@@ -132,7 +139,11 @@ const onCardClick = async (e) => {
 
   await toggleExpansion(cardClone, { top: 0, left: 0, width: "100vw", height: "100vh" });
 
-  const content = await getCardContent(card.textContent);
+  const title = card.textContent;
+  const img = card.dataset.img; // Use dataset.img to access the image data
+
+  // Use the card index to fetch data from the JSON file
+  const content = await getCardContent(cardIndex);
   cardClone.style.display = "block";
   cardClone.style.padding = "0";
   cardClone.appendChild(closeButton);
@@ -140,5 +151,3 @@ const onCardClick = async (e) => {
 };
 
 cards.forEach((card) => card.addEventListener("click", onCardClick));
-
-

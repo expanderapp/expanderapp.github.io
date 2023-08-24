@@ -1,5 +1,7 @@
 {
-  "title": "Sample Title",
+ "cards" : [
+  {
+  "title": "One",
   "img": "https://org.olk1.com/picz/1692367114.jpg",
   "paragraphs": [
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
@@ -8,4 +10,24 @@
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
   ]
+  },
+  {
+    "title": "TWO",
+    "img": "https://org.olk1.com/picz/1692367081.jpg",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+    ]
+  },
+  {
+    "title": "THREE",
+    "img": "",
+    "paragraphs": [
+      
+    ]
+  }
+] 
 }
