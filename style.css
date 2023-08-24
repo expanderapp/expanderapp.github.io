@@ -1,0 +1,97 @@
+      body {
+        background:  white;
+        color: #111;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      @keyframes slideDown {
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .wrapper {
+        padding: 0 25px;
+        max-width: 425px;
+        margin: 0 auto;
+        height: 100vh;
+      }
+      header {
+        padding-top: 100px;
+        margin-bottom: 50px;
+      }
+      header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        color: #271111;
+      }
+      nav {
+        position: absolute;
+        top: 40px;
+        right: 35px;
+        width: 35px;
+      }
+      nav span {
+        background-color: #222;
+        margin: 4px 0;
+        height: 3px;
+        display: block;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: auto;
+      }
+
+      .cards .card {
+        width: calc(50% - 13px);
+        height: 150px;
+        background-color: #111;
+        color: white;
+        margin-bottom: 20px;
+        /* border-radius: 5px; */
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        /* border: 3px solid #f7f7f7; */
+        /* box-shadow: 0 0 9px #333; */
+      }
+
+      .cards .card h2 {
+        margin: 0;
+      }
+
+      .card-content {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 100px 25px 25px;
+        overflow: auto;
+        height: 100%;
+        color: #fff;
+      }
+      .card-content > * {
+        transform: translateY(-35px);
+        opacity: 0;
+      }
+      .card-content h2 {
+        font-size: 32px;
+        margin-bottom: 35px !important;
+        animation: slideDown 0.5s ease-out forwards;
+      }
+      .card-content img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 10px;
+        animation: slideDown 0.5s ease-out 0.2s forwards;
+      }
+      .card-content p {
+        color: #999;
+        animation: slideDown 0.5s ease-out 0.4s forwards;
+      }
