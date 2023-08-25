@@ -1,7 +1,7 @@
 {
  "cards" : [
   {
-  "title": "One",
+  "title": "ART",
   "img": "https://org.olk1.com/picz/1692367114.jpg",
   "paragraphs": [
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
@@ -12,8 +12,8 @@
   ]
   },
   {
-    "title": "TWO",
-    "img": "https://org.olk1.com/picz/1692367081.jpg",
+    "title": "TECH",
+    "img": "https://org.olk1.com/picz/1691786381.jpg",
     "paragraphs": [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
@@ -23,10 +23,47 @@
     ]
   },
   {
-    "title": "THREE",
-    "img": "",
+    "title": "HEALTH",
+    "img": "https://org.olk1.com/picz/1692043122.jpg",
     "paragraphs": [
-      
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+    ]
+  },
+  {
+    "title": "MUSIC",
+    "img": "https://org.olk1.com/picz/1691786574.jpg",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+    ]
+  },
+  {
+    "title": "SCIENCE",
+    "img": "https://org.olk1.com/picz/1692042966.jpg",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+    ]
+  },
+  {
+    "title": "NATURE",
+    "img": "https://org.olk1.com/picz/1691786490.jpg",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
     ]
   }
 ] 

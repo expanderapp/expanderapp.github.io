@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card")
 
+// Home Grid
 const setCardBackgroundImages = async () => {
   try {
     const response = await fetch('content.json');
