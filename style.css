@@ -93,9 +93,8 @@ nav span {
   margin: 0;
   background: rgba(255,0,0,.75);
 }
-
 .card-content {
-  max-width: 640px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 25px 25px;
   overflow: auto;
@@ -108,21 +107,25 @@ nav span {
   opacity: 0;
 }
 .card-content h2 {
+  max-width: 640px;
+  margin: 0px auto 15px !important;
   font-size: 32px;
-  margin-bottom: 20px !important;
   animation: slideDown 0.5s ease-out forwards;
 }
 .card-content img {
+  max-width: 640px;
+  margin: 0px auto 15px;
   width: 100%;
+  display: block;
   background-color: #fff;
-  margin-bottom: 10px;
   cursor: pointer;
   animation: slideDown 0.5s ease-out 0.2s forwards;
 }
 .card-content p {
+  max-width: 640px;
+  margin: 20px auto;
   color: #999;
   font-size: 1.4rem;
-  margin: 20px 0;
   color: white;
   animation: slideDown 0.5s ease-out 0.4s forwards;
 }
