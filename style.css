@@ -14,10 +14,10 @@
   margin: 0;
 }
 html{
-  overflow: hidden;
+  overflow-X: hidden;
 }
 body {
-  background:  white;
+  background: white;
   color: #111;
   font-family: 'Droid Serif', serif;
 }
@@ -35,9 +35,11 @@ body {
 }
 header {
   padding-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
-
+header img{
+  max-width: 100%;  
+}
 /* header h1 {
   font-size: 42px;
   margin-bottom: 10px;
@@ -81,7 +83,7 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 10px;
+  /* padding: 10px; */
   /* border: 3px solid #f7f7f7; */
   /* box-shadow: 0 0 9px #333; */
 }
@@ -91,8 +93,12 @@ nav span {
 
 .cards .card h2 {
   margin: 0;
+  text-align: center;
   background: rgba(255,0,0,.75);
 }
+
+
+/* MODAL OPEN */
 .card-content {
   width: 100%;
   margin: 0 auto;
@@ -103,23 +109,28 @@ nav span {
   cursor: default;
 }
 .card-content > * {
-  transform: translateY(-35px);
+  transform: translateY(-10px);
   opacity: 0;
 }
-.card-content h2 {
+.card-content audio{
+  border: 1px solid white;
+  width: 100%;
+}
+.card-content h3 {
   max-width: 640px;
-  margin: 0px auto 15px !important;
+  padding-left: 0!important;
+  margin: 0px auto 18px !important;
   font-size: 32px;
-  animation: slideDown 0.5s ease-out forwards;
+  animation: slideDown 0.2s ease-out forwards;
 }
 .card-content img {
   max-width: 640px;
-  margin: 0px auto 15px;
+  margin: 0px auto 22px;
   width: 100%;
   display: block;
   background-color: #fff;
   cursor: pointer;
-  animation: slideDown 0.5s ease-out 0.2s forwards;
+  animation: slideDown 0.2s ease-out 0s forwards;
 }
 .card-content p {
   max-width: 640px;
@@ -129,11 +140,32 @@ nav span {
   color: white;
   animation: slideDown 0.5s ease-out 0.4s forwards;
 }
+.card-content a {
+  color: black;
+}
 .card-content p:last-child{
   margin-bottom: 80px;
 }
 
+
+
 footer{
-  display: flex;
-  justify-content: space-between;
+  max-width: 640px;
+  margin: 20px auto;
+  padding-bottom: 40px;
 }
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.socials img{
+  width: 40px;
+  height: auto;
+}
+#spotify{
+  width: 60px;
+  margin: -10px 5px 0;
+}
+
+

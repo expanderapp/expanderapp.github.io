@@ -25,6 +25,9 @@ const setCardBackgroundImages = async () => {
 window.addEventListener("load", setCardBackgroundImages);
 
 
+
+
+
 const toggleExpansion = (element, to, duration = 350) => {
   return new Promise((res) => {
     element.animate(
@@ -42,6 +45,10 @@ const toggleExpansion = (element, to, duration = 350) => {
   })
 }
 
+
+
+
+
 const fadeContent = (element, opacity, duration = 300) => {
   return new Promise((res) => {
     ;[...element.children].forEach((child) => {
@@ -55,7 +62,11 @@ const fadeContent = (element, opacity, duration = 300) => {
 }
 
 
-const getCardContent = async (cardIndex) => {
+
+
+
+
+const getCardData = async (cardIndex) => {
   try {
     const response = await fetch('content.json');
     const data = await response.json();
@@ -63,15 +74,8 @@ const getCardContent = async (cardIndex) => {
     if (data && data.cards && data.cards[cardIndex]) {
       const cardData = data.cards[cardIndex];
 
-      const paragraphs = cardData.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join('');
+      return generateCardContent(cardData);
 
-      return `
-        <div class="card-content">
-          <h2>${cardData.title}</h2>
-          <img src="${cardData.img}" alt="${cardData.title}">
-          ${paragraphs}
-        </div>
-      `;
     } else {
       throw new Error('Card data not found');
     }
@@ -81,6 +85,23 @@ const getCardContent = async (cardIndex) => {
   }
 };
 
+
+const generateCardContent = (cardData) => {
+  const paragraphs = cardData.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join('');
+
+  return `
+    <div class="card-content">
+      <h3>${cardData.title}</h3>
+      
+      <p>${cardData.audio ? `<audio src="${cardData.audio}" controls></audio>` : ''}</p>
+      <img src="${cardData.img}" alt="${cardData.title}">
+      ${paragraphs}
+      
+      ${cardData.href ? `<p><a href="${cardData.href}" target="_blank">${cardData.link}</a></p>` : ''}
+    </div>
+  `;
+
+};
 
 
 
@@ -106,6 +127,9 @@ const createCloseButton = () => {
 
 
 
+
+
+
 const cloneAndPositionCard = (card, top, left, width, height) => {
   const cardClone = card.cloneNode(true);
   cardClone.style.position = "fixed";
@@ -117,6 +141,11 @@ const cloneAndPositionCard = (card, top, left, width, height) => {
   return cardClone;
 };
 
+
+
+
+
+
 const resetCardStyles = (cardClone) => {
   cardClone.style.removeProperty("display");
   cardClone.style.removeProperty("padding");
@@ -126,6 +155,11 @@ const resetCardStyles = (cardClone) => {
 };
 
 let isOpen = false;
+
+
+
+
+
 
 const onCardClick = async (card) => {
   const cardIndex = [...cards].indexOf(card);
@@ -137,6 +171,8 @@ const onCardClick = async (card) => {
 
   const closeButton = createCloseButton();
 
+
+
   const closeCard = async () => {
     document.removeEventListener("keydown", handleEscKeyPress);
     closeButton.remove();
@@ -147,6 +183,8 @@ const onCardClick = async (card) => {
     cardClone.remove();
     isOpen = false;
   };
+
+
 
   const handleEscKeyPress = (event) => {
     if (event.key === "Escape") {
@@ -168,7 +206,7 @@ const onCardClick = async (card) => {
 
   await toggleExpansion(cardClone, { top: 0, left: 0, width: "100vw", height: "100vh" });
 
-  const content = await getCardContent(cardIndex);
+  const content = await getCardData(cardIndex);
   cardClone.style.display = "block";
   cardClone.style.padding = "0";
   cardClone.appendChild(closeButton);

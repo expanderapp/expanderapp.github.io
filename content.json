@@ -1,7 +1,10 @@
 {
  "cards" : [
   {
-  "title": "ART",
+  "title": "Totally Different Title",
+  "href": "https://olk1.com",
+  "link": "olk1.com",
+  "audio": "https://org.olk1.com/picz/1691852780.mp3",
   "img": "https://org.olk1.com/picz/1692367114.jpg",
   "paragraphs": [
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
