@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Droid Serif';
+  src: 
+    url('fonts/DroidSerif-Regular.ttf') format('truetype'),
+    url('fonts/droid-serif.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal;
+  font-display: swap; 
+}
 *,
 *::after,
 *::before {
@@ -10,6 +19,7 @@ html{
 body {
   background:  white;
   color: #111;
+  font-family: 'Droid Serif', serif;
 }
 @keyframes slideDown {
   100% {

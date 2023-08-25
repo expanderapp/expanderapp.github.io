@@ -1,5 +1,29 @@
 const cards = document.querySelectorAll(".card")
 
+const setCardBackgroundImages = async () => {
+  try {
+    const response = await fetch('content.json');
+    const data = await response.json();
+
+    if (data && data.cards) {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        if (data.cards[index] && data.cards[index].img) {
+          card.style.backgroundImage = `url('${data.cards[index].img}')`;
+          card.style.backgroundSize = "cover";
+          card.style.backgroundRepeat = 'no-repeat';
+        }
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching content:', error);
+  }
+};
+
+// Call the function to set background images when the page loads
+window.addEventListener("load", setCardBackgroundImages);
+
+
 const toggleExpansion = (element, to, duration = 350) => {
   return new Promise((res) => {
     element.animate(
@@ -88,6 +112,7 @@ const cloneAndPositionCard = (card, top, left, width, height) => {
   cardClone.style.left = left + "px";
   cardClone.style.width = width + "px";
   cardClone.style.height = height + "px";
+  cardClone.style.backgroundImage = "";
   return cardClone;
 };
 
