@@ -55,7 +55,7 @@ nav span {
 .cards .card {
   width: calc(50% - 13px);
   height: 150px;
-  background-color: #111;
+  background-color: red;
   color: white;
   margin-bottom: 20px;
   /* border-radius: 5px; */
@@ -90,7 +90,7 @@ nav span {
 }
 .card-content h2 {
   font-size: 32px;
-  margin-bottom: 35px !important;
+  margin-bottom: 20px !important;
   animation: slideDown 0.5s ease-out forwards;
 }
 .card-content img {
@@ -103,6 +103,8 @@ nav span {
 .card-content p {
   color: #999;
   font-size: 1.4rem;
+  margin: 20px 0;
+  color: white;
   animation: slideDown 0.5s ease-out 0.4s forwards;
 }
 .card-content p:last-child{

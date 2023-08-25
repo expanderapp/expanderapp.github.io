@@ -69,7 +69,7 @@ const createCloseButton = () => {
     right: 45px;
     width: 35px;
     height: 35px;
-    opacity: 0.1;
+    opacity: 0.2;
     border: 0;
     background: transparent;
     color: white;
