@@ -92,9 +92,13 @@ const generateCardContent = (cardData) => {
   return `
     <div class="card-content">
       <h3>${cardData.title}</h3>
-      
+    
       <p>${cardData.audio ? `<audio src="${cardData.audio}" controls></audio>` : ''}</p>
       <img src="${cardData.img}" alt="${cardData.title}">
+      
+      ${cardData.quote ? `<p class="quote">${cardData.quote}</p>` : ''}
+      ${cardData.author ? `<p class="author">${cardData.author}</p>` : ''}
+
       ${paragraphs}
       
       ${cardData.href ? `<p><a href="${cardData.href}" target="_blank">${cardData.link}</a></p>` : ''}

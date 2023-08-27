@@ -1,77 +1,112 @@
 {
  "cards" : [
   {
-  "title": "Totally Different Title",
-  "href": "https://olk1.com",
-  "link": "olk1.com",
-  "audio": "https://org.olk1.com/picz/1691852780.mp3",
-  "img": "https://org.olk1.com/picz/1692367114.jpg",
+  "title": "Basquiat",
+  "href": "https://www.basquiat.com/",
+  "link": "https://www.basquiat.com/",
+  "img": "../images/basquiat.png",
+  "quote": "I cross out words so you will see them more....",
+  "author": "Jean-Michel Basquiat",
   "paragraphs": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+    "When asked to describe his art, Jean-Michel Basquiat responded with customary aplomb: 'royalty, heroism, and the streets.'",
+    
+    "A high school dropout, Basquiat found his true calling hanging out in the streets and inserting himself in the bustling urban milieu, ultimately becoming an influential figure in New York City’s Downtown, especially the East Village club scene.",
+    
+    "He was a regular among a group of filmmakers, artists, and musicians who made the Mudd Club, Club 57, and CBGB their stomping ground.",
+    
+    "Basquiat achieved his breakthrough in the early 1980s, developing a unique vocabulary characterized by repetitive images, human heads with open mouths as if in speech, a variety of marks, and xeroxed collage.",
+    
+    "In his paintings, the patches of intense color, created with acrylic, oil stick, and graphite, keyed into the excitement of New York’s subculture."
   ]
   },
   {
     "title": "TECH",
     "img": "https://org.olk1.com/picz/1691786381.jpg",
+    "quote": "Analog chip paves the way for sustainable AI",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+      "As the resources required by artificial intelligence increase unsustainably, an analog design provides an energy-efficient alternative to digital computer chips — and one that is ideally suited to neural-network computations.",
+
+      "From adjusting the tone of e-mails to generating stunning imagery, artificial intelligence (AI) has already cemented its place in everyday life. However, training a large language model, such as ChatGPT, and handling the daily queries it receives, requires data centres that generate thousands of tonnes of carbon emissions and cost millions of dollars",
+
+      "Models of artificial intelligence (AI) that have billions of parameters can achieve high accuracy across a range of tasks1,2, but they exacerbate the poor energy efficiency of conventional general-purpose processors, such as graphics processing units or central processing units.",
+      
+      "Analog in-memory computing (analog-AI) can provide better energy efficiency by performing matrix-vector multiplications in parallel on `memory tiles`. However, analog-AI has yet to demonstrate software-equivalent (SWeq) accuracy on models that require many such tiles and efficient communication of neural-network activations between the tiles.", 
+      
+      "Here we present an analog-AI chip that combines 35 million phase-change memory devices across 34 tiles, massively parallel inter-tile communication and analog, low-power peripheral circuitry that can achieve up to 12.4 tera-operations per second per watt (TOPS/W) chip-sustained performance."
     ]
   },
   {
     "title": "HEALTH",
-    "img": "https://org.olk1.com/picz/1692043122.jpg",
+    "img": "https://domf5oio6qrcr.cloudfront.net/medialibrary/9959/GettyImages-1015004880.jpg",
+    "quote": "The plank pose is where you hold a push-up position while resting on your forearms.",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+      "This simple move is the ideal exercise for strengthening crucial core muscles. As you go about your day, almost every move you make revolves around your core - from picking up items on the floor to twisting to see if the coast is clear when driving.",
+
+      "Your core is made up of several muscle groups and covers your abdominals, back, hips, pelvis, and buttocks. A weak core can cause all kinds of problems. It can lead to poor posture, and inevitably to neck and shoulder pain. Sore knees and hips often can be traced to a weak core.",
+
+      "But the biggest issue with core weakness is low back pain. Back muscles and your core help to stabilize your body before any movement. If your core is weak, the other surrounding muscles have to compensate. Over time, these muscles can suffer strain, which leads to lingering pain.",
+
+      "How to Plank:",
+
+      "Lie facedown with your forearms on the floor, with your legs extended and your feet together. You can use a mat or towel to make this more comfortable.",
+
+      "Push into your forearms as you raise your body so it forms a straight line from your head and neck to your feet. (Do not let your hips rise or sag.)",
+      
+      "Keep your gaze down and hold this position as you engage your abdominal muscles. Take steady, even breaths.",
+      
+      "Try to maintain the position for up to 30 seconds and then lower your body and rest. This completes one set. Work toward completing two to three sets."
     ]
   },
   {
     "title": "MUSIC",
-    "img": "https://org.olk1.com/picz/1691786574.jpg",
+    "img": "https://matthew-via-music.com/assets/vertical.jpg",
+    "audio": "https://mvmaudio.olk1.com/Vertical/01Vertical.mp3",
+    "quote": "'He's going vertical, so am I.",
+    "author": "Maverick (Top Gun)",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+      "To inaugurate the 35th album in the discography, new branding was required. A logo, a colour scheme and a vibrant colourful design language.",
+
+      "Multi-instrumentalist musician and composer Matthew via Music, sometimes known as MvM has a prolific output. Having just released the 35th album in the discography, our sources suggest between 2 and 4 more albums are scheduled for release this year.",
+
+      "Genre spanning, sometimes experiemental but always with a pop sensibility, MvM can both challenge and entertain the listen with each new sound.",
+
+      "Vertical, their most recent album, gives a gentle nod to nostalgic sounds of the 80's where drum machines and analogue synthesizers ruled supreme.",
+
+      "Compositional and production skills truly set this artist apart in a heavily saturated medium and market place.",
+      
+      "You can listen to the first track of the album (above) and then checkout the usual streaming platforms for the rest."
     ]
   },
   {
     "title": "SCIENCE",
-    "img": "https://org.olk1.com/picz/1692042966.jpg",
+    "img": "https://i.pinimg.com/564x/fc/86/eb/fc86ebbd2a00bf5daf6e05dfc09947aa.jpg",
+    "quote":"How do deep sea plants perform photosynthesis?",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+      "Plants that live on land grow by using sunlight to perform photosynthesis. How, then, do algae photosynthesise in the deep sea, where only tiny amounts of light reach these plants?",
+      
+      "Land plants mainly absorb red and blue light from the sun and use it for photosynthesis. However, only weak blue-green light reaches the ocean floor. Therefore, macroalgae growing in the ocean have developed a protein, a so-called photosynthetic antenna, that efficiently utilises this blue-green light.",
+
+      "The photosynthetic antenna of marine macroalgae is very similar to that of land plants, but differs in the structure of the pigments bound to it. Land plants have two types of pigments bound to their photosynthetic antennae, namely carotenoids and chlorophylls.",
+
+      "In the marine green macroalga Codium fragile, the major carotenoids are substituted with siphonaxanthin while some chlorophyll a molecules are replaced by chlorophyll b molecules.",
+
+      "Siphonaxanthin and chlorophyll b are known to contribute to increased absorption of green light and blue-green light, respectively, but how this contributes to photosynthesis has not yet been fully understood."
     ]
   },
   {
     "title": "NATURE",
-    "img": "https://org.olk1.com/picz/1691786490.jpg",
+    "img": "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/large-bird-harpy-eagle-2-5d9302fd39b41__700.jpg",
+    "quote": "Native to Central and South America, it was named for the Harpies of Greek mythology.",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro reprehenderit? ...",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis cupiditate dicta ..."
+      "The Harpy Eagle (Harpia harpyja) is considered one of the most powerful and largest raptors globally. The length of the rear talons is about 4 to 5 inches, just the same as a grizzly bear's claws. Those talons give the Harpy enough power and grip to lift prey up to their own weight.",
+
+      "The coloration of its plumage has 3 primary colors (black, grey, and white) that exhibit a combination of shades and gradients. The tonalities are the same between males and females. Still, it does present a slight variation between young and adults where the intensity of the colors changes, being the adults darker and the young lighter.",
+
+      "As top predators in their food chain, Harpies feed on sloths, opossums, and monkeys. This eagle is a silent predator that glides across the forest like a stealth drone; despite its wingspan reaching up to 6.5 feet (2 meters).",
+      
+      "Still, it won't fly long distances to conserve energy and strength to catch and lift small animals weighing 17 pounds. Wander and stalking its prey is not their game, and instead, it sits and patiently waits until they come along.",
+
+      "The Harpy Eagle's facial disk feathers can be lowered or lifted at will like an owl. This process helps them direct sound waves to their ears to improve hearing. Its eyesight is 8 times better than humans, and when locked on a potential meal, they fly below the forest canopy and swoop in to catch their prey."
     ]
   }
 ] 
